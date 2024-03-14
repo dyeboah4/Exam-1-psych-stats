@@ -1,0 +1,15 @@
+Combine some or all of these to form one or more hypothesis tests about differences. Explain carefully the question(s) and answer(s) of the hypothesis test(s). I expect that different people may choose different levels of significance. Please provide estimate, standard error, t-stat and a p-value for each hypothesis test and a confidence interval. __Write a paragraph__ explaining each test (carefully noting what is the null hypothesis) and explaining the results of that test along with what assumptions are needed for the test to be valid.
+
+```{r eval=FALSE}
+> xtabs(~ use_marijan + Age_midpt)
+                         Age_midpt
+use_marijan   21   27   32   37   42   47   52   57   62   67   72   77   82
+          0 3737 3117 3675 4530 5069 4949 6273 6960 8520 9699 9275 7154 7963
+          1 1311  990 1098 1050 1073  828  820  936 1111 1066  758  311  105
+```
+THE hypothesis test for the data, is that  the null hypothesis is age and marijuana use are independent and our alt hypothesis is that age and marijuana use are dependent. 
+The levels of signinifance I choose were alpha = 0.05. After I combined the age ranges of the data I had 4 columns of age ranges from 21-32, 37-47, 52-62, 67-82. I kept the rows to be 1 totaling
+one or more days of marijuana use, and zero to be one days of marijuana use. After running the test I found the critcal value of the data set to be 7.815. However the date had a test statistic of 
+116076.1472. This was greater than the critical value and as result I rejected the null hypothesis. However there is not enough data to prove that the alternative hypothesis is correct. 
+There is enough to determine that age and marjunan usage are not independent. 
+ 
